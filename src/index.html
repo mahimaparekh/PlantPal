@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Pal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --dark-green: #537d5d;
+        --green: #73946b;
+        --light-green: #9ebc8a;
+        --yellow-green: #d2d0a0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+      }
+      body {
+        height: 600px;
+        width: 800px;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+        border: 2px solid black;
+        margin: 20px;
+      }
+
+      .frame1 {
+        height: 100%;
+        background-color: var(--yellow-green);
+        /* border: 2px solid yellow; */
+        display: none;
+      }
+
+      .f1-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+        height: 100%;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+      }
+
+      .app-name {
+        font-family: "Comfortaa", sans-serif;
+        letter-spacing: 4px;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        color: var(--green);
+        text-shadow: 4px 4px 4px var(--dark-green);
+        font-style: normal;
+        font-size: 100px;
+      }
+
+      .start-btn {
+        padding: 10px;
+        width: 50%;
+        border-radius: 100px;
+        box-sizing: border-box;
+        font-size: 20px;
+        box-shadow: #d2d0a0;
+        border: 1px solid var(--dark-green);
+        cursor: pointer;
+        font-family: "Comfortaa", sans-serif;
+        font-weight: 600;
+        letter-spacing: 4px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .start-btn:hover {
+        transform: translateY(-5px); /* Lifts the button */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+      }
+
+      .frame2{
+        height: 100%;
+        background-color: var(--yellow-green);
+        /* display: none; */
+      }
+
+      .f2-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- The starting Frame -->
+    <div class="frame1">
+      <div class="f1-container">
+        <h1 class="app-name">PLANT PAL</h1>
+        <button class="start-btn">START</button>
+      </div>
+    </div>
+
+    <div class="frame2">
+      <div class="f2-container">
+        <h3 class="ask-user">Please enter your name</h3>
+        <input type="text">
+        
+
+
+      </div>
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
