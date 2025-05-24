@@ -50,3 +50,17 @@ document.querySelector(".continue-btn").addEventListener("click", function () {
     }
   }
 });
+// const targetDate = new Date.getTime() + (1000 * 60 * 60 * 24);
+// const now = new Date().getTime();
+// const difference = targetDate - now;
+
+let num_of_plants = document.querySelectorAll(".water-me-btn").length;//5
+
+for(let i=0;i<num_of_plants;i++){
+  document.querySelectorAll(".water-me-btn")[i].addEventListener("click",function(){
+    document.querySelectorAll(".water-me-btn")[i].textContent = "mahima";
+  
+  
+  })
+
+};
